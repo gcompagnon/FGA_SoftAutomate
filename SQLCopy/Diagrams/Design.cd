@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FGA.SQLCopy.MSSQLUtils" Collapsed="true">
+    <Position X="1.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAEgAAAgBAAAAAQIAAAACAAAAAAAAAAAEAAAAAI=</HashCode>
+      <FileName>MSSQLUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FGA.SQLCopy.CsvAdapter" Collapsed="true">
+    <Position X="4" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAgAACAAAAAAAAAAAAAAAACAgAAAAAAAAQAII=</HashCode>
+      <FileName>CvsAdapter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Enum Name="FGA.SQLCopy.ListeMode" Collapsed="true">
+    <Position X="1.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAIAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MSSQLUtils.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

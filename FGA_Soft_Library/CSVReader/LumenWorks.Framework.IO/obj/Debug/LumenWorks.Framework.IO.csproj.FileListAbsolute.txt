@@ -1,0 +1,14 @@
+C:\DATA\GIT\FGA_Soft_Automate\FGA_Soft_Library\CSVReader\LumenWorks.Framework.IO\bin\Debug\LumenWorks.Framework.IO.dll
+C:\DATA\GIT\FGA_Soft_Automate\FGA_Soft_Library\CSVReader\LumenWorks.Framework.IO\bin\Debug\LumenWorks.Framework.IO.pdb
+C:\DATA\GIT\FGA_Soft_Automate\FGA_Soft_Library\CSVReader\LumenWorks.Framework.IO\obj\Debug\LumenWorks.Framework.IO.Csv.Resources.ExceptionMessage.resources
+C:\DATA\GIT\FGA_Soft_Automate\FGA_Soft_Library\CSVReader\LumenWorks.Framework.IO\obj\Debug\LumenWorks.Framework.IO.csproj.GenerateResource.Cache
+C:\DATA\GIT\FGA_Soft_Automate\FGA_Soft_Library\CSVReader\LumenWorks.Framework.IO\obj\Debug\LumenWorks.Framework.IO.dll
+C:\DATA\GIT\FGA_Soft_Automate\FGA_Soft_Library\CSVReader\LumenWorks.Framework.IO\obj\Debug\LumenWorks.Framework.IO.pdb
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\CSVReader\LumenWorks.Framework.IO\bin\Debug\LumenWorks.Framework.IO.dll
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\CSVReader\LumenWorks.Framework.IO\bin\Debug\LumenWorks.Framework.IO.pdb
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\CSVReader\LumenWorks.Framework.IO\obj\Debug\LumenWorks.Framework.IO.csprojAssemblyReference.cache
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\CSVReader\LumenWorks.Framework.IO\obj\Debug\LumenWorks.Framework.IO.Csv.Resources.ExceptionMessage.resources
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\CSVReader\LumenWorks.Framework.IO\obj\Debug\LumenWorks.Framework.IO.csproj.GenerateResource.cache
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\CSVReader\LumenWorks.Framework.IO\obj\Debug\LumenWorks.Framework.IO.csproj.CoreCompileInputs.cache
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\CSVReader\LumenWorks.Framework.IO\obj\Debug\LumenWorks.Framework.IO.dll
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\CSVReader\LumenWorks.Framework.IO\obj\Debug\LumenWorks.Framework.IO.pdb

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<DbSets>
+	<Indexes>
+		<IndexBasket type="FGABusinessComponent.BusinessComponent.IndexComp.IndexBasket">
+			<Identification>
+				<SecuritiesIdentification>FR1114567890</SecuritiesIdentification>
+		<DomesticIdentificationSource>FR</DomesticIdentificationSource>
+		<Bloomberg>FP FP</Bloomberg>
+			</Identification>
+			<IndexFixingDate>14:30</IndexFixingDate>
+			<IndexFrequency>MONTHLY</IndexFrequency>
+			<IndexCurrency>EUR</IndexCurrency>
+		</IndexBasket>
+	</Indexes>
+
+	<!--<Locations>
+		<Location>
+			<City>Boston</City>
+			<Users>
+				<User>
+					<Name>Mary</Name>
+					<Age>21</Age>
+					<Roles>
+						<Role usekey="admin" />
+						<Role usekey="user" />
+					</Roles>
+				</User>
+				<User>
+					<Name>Bob</Name>
+					<Age>45</Age>
+					<Roles>
+						<Role usekey="user" />
+					</Roles>
+				</User>
+			</Users>
+		</Location>
+		<Location>
+			<City>Chicago</City>
+			<Users>
+				<User>
+					<Name>Tom</Name>
+					<Age>33</Age>
+					<Roles>
+						<Role usekey="admin" />
+						<Role usekey="user" />
+					</Roles>
+				</User>
+			</Users>
+		</Location>
+	</Locations>-->
+</DbSets>

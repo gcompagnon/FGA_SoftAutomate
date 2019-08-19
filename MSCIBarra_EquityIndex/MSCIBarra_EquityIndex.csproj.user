@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <StartArguments>-fichier_cours_xls="\\vill1\Partage\,FGA Systèmes\QUOTIDIEN\IMPORT OMEGA\HISTO\COURS_MSCI\201311\COURS_MSCI_20131126_YYYYMMDD_hhmmss.xls"  -date="20131126" -fichier_devises_xls="\\vill1\Partage\,FGA Systèmes\QUOTIDIEN\IMPORT OMEGA\HISTO\DEVISES_MSCI\201311\DEVISES_MSCI_20131126_YYYYMMDD_hhmmss.xls" -fichier_cours_xls=c:\TOTO.xls</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartArguments>-fichier_cours_xls="\\vill1\Partage\,FGA Systèmes\QUOTIDIEN\IMPORT OMEGA\HISTO\COURS_MSCI\201312\COURS_MSCI_20131227_YYYYMMDD_hhmmss.xls"  -date="20131227" -liste_exclusion_prix="RDSA LN Equity,5 HK Equity" -msci_files_path="G:\,FGA MarketData\INDICES\MSCI\201312\"</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PublishUrlHistory>publish\</PublishUrlHistory>
+    <InstallUrlHistory />
+    <SupportUrlHistory />
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>fr-FR</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+</Project>

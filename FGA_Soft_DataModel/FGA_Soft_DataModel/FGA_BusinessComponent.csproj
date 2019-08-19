@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF10115B-3D0E-4270-B3E7-9AD290ACBF14}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FGABusinessComponent</RootNamespace>
+    <AssemblyName>FGA_Soft_DataModel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>FG_FRONT_certificat.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.1\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessComponent\Common\CapitalTypeCode.cs" />
+    <Compile Include="BusinessComponent\Common\InterestComputationMethodCode.cs" />
+    <Compile Include="BusinessComponent\Common\DividendPolicyCode.cs" />
+    <Compile Include="BusinessComponent\Common\DistributionPolicyCode.cs" />
+    <Compile Include="BusinessComponent\Common\FinancialAssetTypeCategoryCode.cs" />
+    <Compile Include="BusinessComponent\Common\SeniorityLevel.cs" />
+    <Compile Include="BusinessComponent\Common\TypeOfPriceCode.cs" />
+    <Compile Include="BusinessComponent\Core\AssetClassification.cs" />
+    <Compile Include="BusinessComponent\Security\AssetPortfolioAssociation.cs" />
+    <Compile Include="BusinessComponent\Security\Capital.cs" />
+    <Compile Include="BusinessComponent\Security\Equity.cs" />
+    <Compile Include="BusinessComponent\Security\Fx\CurrencyExchange.cs" />
+    <Compile Include="BusinessComponent\Security\InvestmentFund.cs" />
+    <Compile Include="BusinessComponent\Security\Pricing\Valuation.cs" />
+    <Compile Include="BusinessComponent\Security\Roles\Role.cs" />
+    <Compile Include="BusinessComponent\Security\Roles\IssuerRole.cs" />
+    <Compile Include="BusinessComponent\Security\Asset.cs" />
+    <Compile Include="BusinessComponent\Common\Market.cs" />
+    <Compile Include="BusinessComponent\Security\Rating.cs" />
+    <Compile Include="BusinessComponent\Security\SecuritiesIdentification.cs" />
+    <Compile Include="BusinessComponent\Common\CountryCode.cs" />
+    <Compile Include="BusinessComponent\Holding\AssetHolding.cs" />
+    <Compile Include="BusinessComponent\Core\Composite\Component.cs" />
+    <Compile Include="BusinessComponent\Core\Composite\Composite.cs" />
+    <Compile Include="BusinessComponent\FGAContext.cs" />
+    <Compile Include="BusinessComponent\Common\FrequencyCode.cs" />
+    <Compile Include="BusinessComponent\Common\CurrencyCode.cs" />
+    <Compile Include="BusinessComponent\Common\Utilities.cs" />
+    <Compile Include="BusinessComponent\Holding\IndexComp\IndexBasket.cs" />
+    <Compile Include="BusinessComponent\Holding\IndexComp\IndexRate.cs" />
+    <Compile Include="BusinessComponent\Holding\PortfolioComp\Portfolio.cs" />
+    <Compile Include="BusinessComponent\Holding\PortfolioComp\PortfolioCode.cs" />
+    <Compile Include="BusinessComponent\Security\Debt.cs" />
+    <Compile Include="BusinessComponent\Security\Pricing\SecuritiesPricing.cs" />
+    <Compile Include="BusinessComponent\Security\Security.cs" />
+    <Compile Include="BusinessComponent\Util\SerializationHelpers.cs" />
+    <Compile Include="BusinessComponent\Util\XML\XMLSeeder.cs" />
+    <Compile Include="BusinessComponent\Util\DontDropDbJustCreateTablesIfModelChanged.cs" />
+    <Compile Include="BusinessComponent\Util\EFCodeFirstMethods.cs" />
+    <Compile Include="BusinessComponent\Holding\IndexComp\Index.cs" />
+    <Compile Include="Migrations\201401271609023_INITIAL.cs" />
+    <Compile Include="Migrations\201401271609023_INITIAL.Designer.cs">
+      <DependentUpon>201401271609023_INITIAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201401281624488_FamilyKey.cs" />
+    <Compile Include="Migrations\201401281624488_FamilyKey.Designer.cs">
+      <DependentUpon>201401281624488_FamilyKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201401291335047_FamilyKeyString.cs" />
+    <Compile Include="Migrations\201401291335047_FamilyKeyString.Designer.cs">
+      <DependentUpon>201401291335047_FamilyKeyString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403061806541_CurrencyExchange.cs" />
+    <Compile Include="Migrations\201403061806541_CurrencyExchange.Designer.cs">
+      <DependentUpon>201403061806541_CurrencyExchange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403171437580_YieldValorisation.cs" />
+    <Compile Include="Migrations\201403171437580_YieldValorisation.Designer.cs">
+      <DependentUpon>201403171437580_YieldValorisation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403191738317_ValuationSource.cs" />
+    <Compile Include="Migrations\201403191738317_ValuationSource.Designer.cs">
+      <DependentUpon>201403191738317_ValuationSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403311435374_ValuationSource_FX.cs" />
+    <Compile Include="Migrations\201403311435374_ValuationSource_FX.Designer.cs">
+      <DependentUpon>201403311435374_ValuationSource_FX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404171002186_FamilyKey2.cs" />
+    <Compile Include="Migrations\201404171002186_FamilyKey2.Designer.cs">
+      <DependentUpon>201404171002186_FamilyKey2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201405061643191_IndexValuation_BaseValue.cs" />
+    <Compile Include="Migrations\201405061643191_IndexValuation_BaseValue.Designer.cs">
+      <DependentUpon>201405061643191_IndexValuation_BaseValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Diagrams\HoldingClassDiagram.cd" />
+    <None Include="Diagrams\SecurityClassDiagram.cd" />
+    <None Include="FG_FRONT_certificat.pfx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201401271609023_INITIAL.resx">
+      <DependentUpon>201401271609023_INITIAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201401281624488_FamilyKey.resx">
+      <DependentUpon>201401281624488_FamilyKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201401291335047_FamilyKeyString.resx">
+      <DependentUpon>201401291335047_FamilyKeyString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403061806541_CurrencyExchange.resx">
+      <DependentUpon>201403061806541_CurrencyExchange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403171437580_YieldValorisation.resx">
+      <DependentUpon>201403171437580_YieldValorisation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403191738317_ValuationSource.resx">
+      <DependentUpon>201403191738317_ValuationSource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403311435374_ValuationSource_FX.resx">
+      <DependentUpon>201403311435374_ValuationSource_FX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404171002186_FamilyKey2.resx">
+      <DependentUpon>201404171002186_FamilyKey2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201405061643191_IndexValuation_BaseValue.resx">
+      <DependentUpon>201405061643191_IndexValuation_BaseValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Config\log4net.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FGAContext.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Migrations\201401281624488_FamilyKey.sql" />
+    <Content Include="Migrations\201403051424037_IndexValuation.sql" />
+    <Content Include="Migrations\201403061806541_CurrencyExchange.sql" />
+    <Content Include="Migrations\201403171437580_YieldValorisation.sql" />
+    <Content Include="Migrations\201403191738317_ValuationSource.sql" />
+    <Content Include="Migrations\201403311435374_ValuationSource_FX.sql" />
+    <Content Include="Migrations\201404171002186_FamilyKey2.sql" />
+    <Content Include="Migrations\201405061643191_IndexValuation_BaseValue.sql" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

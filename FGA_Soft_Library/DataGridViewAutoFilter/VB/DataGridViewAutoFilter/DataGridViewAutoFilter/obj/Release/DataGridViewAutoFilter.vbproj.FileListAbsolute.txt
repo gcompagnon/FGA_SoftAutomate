@@ -1,0 +1,10 @@
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DataGridViewAutoFilter\bin\Release\DataGridViewAutoFilter.dll
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DataGridViewAutoFilter\bin\Release\DataGridViewAutoFilter.pdb
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DataGridViewAutoFilter\bin\Release\DataGridViewAutoFilter.xml
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DataGridViewAutoFilter\obj\Release\ResolveAssemblyReference.cache
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DataGridViewAutoFilter\obj\Release\DataGridViewAutoFilter.Resources.resources
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DataGridViewAutoFilter\obj\Release\GenerateResource-ResGen.read.1.tlog
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DataGridViewAutoFilter\obj\Release\GenerateResource-ResGen.write.1.tlog
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DataGridViewAutoFilter\obj\Release\DataGridViewAutoFilter.dll
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DataGridViewAutoFilter\obj\Release\DataGridViewAutoFilter.xml
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DataGridViewAutoFilter\obj\Release\DataGridViewAutoFilter.pdb

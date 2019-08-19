@@ -1,0 +1,12 @@
+C:\DATA\GIT\FGA_Soft_Automate\FGA_Soft_Library\log4net-1.2.11\build\bin\net\2.0\debug\log4net.dll
+C:\DATA\GIT\FGA_Soft_Automate\FGA_Soft_Library\log4net-1.2.11\build\bin\net\2.0\debug\log4net.pdb
+C:\DATA\GIT\FGA_Soft_Automate\FGA_Soft_Library\log4net-1.2.11\build\bin\net\2.0\debug\log4net.xml
+C:\DATA\GIT\FGA_Soft_Automate\FGA_Soft_Library\log4net-1.2.11\src\obj\Debug\log4net.dll
+C:\DATA\GIT\FGA_Soft_Automate\FGA_Soft_Library\log4net-1.2.11\src\obj\Debug\log4net.pdb
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\log4net-1.2.11\build\bin\net\2.0\debug\log4net.dll
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\log4net-1.2.11\build\bin\net\2.0\debug\log4net.pdb
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\log4net-1.2.11\build\bin\net\2.0\debug\log4net.xml
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\log4net-1.2.11\src\obj\Debug\log4net.vs2010.csprojAssemblyReference.cache
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\log4net-1.2.11\src\obj\Debug\log4net.vs2010.csproj.CoreCompileInputs.cache
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\log4net-1.2.11\src\obj\Debug\log4net.dll
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\log4net-1.2.11\src\obj\Debug\log4net.pdb

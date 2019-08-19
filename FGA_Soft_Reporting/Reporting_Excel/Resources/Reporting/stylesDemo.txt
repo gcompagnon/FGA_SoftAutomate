@@ -1,0 +1,39 @@
+Le style d'une ligne est définit par 6 styles de cellules. Le premier style de cellule est utilisé pour 
+les colonnes avant la colonne 'Rubrique', le second pour la colonne'Rubrique', le troisième pour les 
+colonnes entre 'Rubrique' et 'libelle', le quatrieme pour la colonne 'libelle', le cinquieme pour
+les colonnes restantes sauf la dernière et le sixième pour la dernière colonne.
+
+
+cellule :nomPolice;taillePolice;Gras;couleurPolice;couleurFond;bordureTop;bordureBotom;bodureLeft;bordureRight;typeCellule
+
+couleurs : code RGB du type R153G204B255
+bordures : Thick, Thin, ou absent
+type de cellule :
+		2 : nombre avec 2 chiffres apres la virgule
+		3 : nombre avec espace pour séparateur des milliers, millions...
+		10 : poucenage avec 2 chifres après la virgule
+
+Titres bleu graphés
+#cellule Calibri; 11;true;;R153G204B255;Thick;Thick;;;3
+#ligne 1;1;1;1;1;1
+
+Titre blanc graphés
+#cellule Calibri; 11;false;;;Thin;Thin;;;3
+#cellule Calibri; 11;false;;;Thin;Thin;;Thin;3
+#ligne 1;2;2;2;1;2
+
+Premier Titre bleu
+#cellule Calibri; 11;true;;R153G204B255;Thick;Thick;;;3
+#ligne 1;1;1;1;1;1
+
+
+Titre blanc
+#cellule Calibri; 11;false;;;Thin;Thin;;;3
+#cellule Calibri; 11;false;;;Thin;Thin;;Thin;3
+#ligne 1;2;2;2;1;2
+
+
+corps vert et ecriture grise
+#cellule Calibri; 11; false;R130G130B130;R204G255B204;;;;Thin;3
+#cellule Calibri; 11; false;R130G130B130;;;;;;3
+#ligne 2;1;1;1;2;1

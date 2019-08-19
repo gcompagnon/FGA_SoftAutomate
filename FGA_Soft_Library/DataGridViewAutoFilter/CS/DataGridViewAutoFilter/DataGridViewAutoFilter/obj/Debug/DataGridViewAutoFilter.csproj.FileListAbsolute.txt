@@ -1,0 +1,5 @@
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DataGridViewAutoFilter\bin\Debug\DataGridViewAutoFilter.dll
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DataGridViewAutoFilter\bin\Debug\DataGridViewAutoFilter.pdb
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DataGridViewAutoFilter\obj\Debug\ResolveAssemblyReference.cache
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DataGridViewAutoFilter\obj\Debug\DataGridViewAutoFilter.dll
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DataGridViewAutoFilter\obj\Debug\DataGridViewAutoFilter.pdb

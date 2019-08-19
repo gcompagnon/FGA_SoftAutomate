@@ -1,0 +1,11 @@
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DesignerSetupDemo\bin\Debug\DesignerSetupDemo.exe
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DesignerSetupDemo\bin\Debug\DesignerSetupDemo.pdb
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DesignerSetupDemo\bin\Debug\DataGridViewAutoFilter.dll
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DesignerSetupDemo\bin\Debug\DataGridViewAutoFilter.pdb
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DesignerSetupDemo\obj\Debug\ResolveAssemblyReference.cache
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DesignerSetupDemo\obj\Debug\DesignerSetupDemo.DesignerSetupForm.resources
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DesignerSetupDemo\obj\Debug\DesignerSetupDemo.Properties.Resources.resources
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DesignerSetupDemo\obj\Debug\GenerateResource.read.1.tlog
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DesignerSetupDemo\obj\Debug\GenerateResource.write.1.tlog
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DesignerSetupDemo\obj\Debug\DesignerSetupDemo.exe
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DesignerSetupDemo\obj\Debug\DesignerSetupDemo.pdb

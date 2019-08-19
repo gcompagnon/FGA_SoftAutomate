@@ -1,0 +1,737 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DataGridViewAutoFilter
+</name>
+</assembly>
+<members>
+<member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.dropDownListBox">
+	<summary>
+ The ListBox used for all drop-down lists. 
+ </summary>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.filters">
+	<summary>
+ A list of filters available for the owning column stored as 
+ formatted and unformatted string values. 
+ </summary>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.selectedFilterValue">
+	<summary>
+ The drop-down list filter value currently in effect for 
+ the owning column. 
+ </summary>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.currentColumnFilter">
+	<summary>
+ The complete filter string currently in effect for the owning column. 
+ </summary>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.filtered">
+	<summary>
+ Indicates whether the DataGridView is currently filtered by the 
+ owning column.  
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.#ctor(System.Windows.Forms.DataGridViewColumnHeaderCell)">
+	<summary>
+ Initializes a new instance of the DataGridViewColumnHeaderCell 
+ class and sets its property values to the property values of the 
+ specified DataGridViewColumnHeaderCell.
+ </summary>
+	<param name="oldHeaderCell">The DataGridViewColumnHeaderCell to 
+ copy property values from.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.#ctor">
+	<summary>
+ Initializes a new instance of the DataGridViewColumnHeaderCell 
+ class. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.Clone">
+	<summary>
+ Creates an exact copy of this cell.
+ </summary>
+	<returns>An object that represents the cloned 
+ DataGridViewAutoFilterColumnHeaderCell.</returns>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.OnDataGridViewChanged">
+	<summary>
+ Called when the value of the DataGridView property changes
+ in order to perform initialization that requires access to the 
+ owning control and column. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.VerifyDataSource">
+	<summary>
+ Confirms that the data source, if it has been set, is a BindingSource.
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.HandleDataGridViewEvents">
+	<summary>
+ Add handlers to various DataGridView events, primarily to invalidate 
+ the drop-down button bounds, hide the drop-down list, and reset 
+ cached filter values when changes in the DataGridView require it.
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.DataGridView_Scroll(System.Object,System.Windows.Forms.ScrollEventArgs)">
+	<summary>
+ Invalidates the drop-down button bounds when 
+ the user scrolls horizontally.
+ </summary>
+	<param name="sender">The object that raised the event.</param>
+	<param name="e">A ScrollEventArgs that contains the event data.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.DataGridView_ColumnDisplayIndexChanged(System.Object,System.Windows.Forms.DataGridViewColumnEventArgs)">
+	<summary>
+ Invalidates the drop-down button bounds when 
+ the column display index changes.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.DataGridView_ColumnWidthChanged(System.Object,System.Windows.Forms.DataGridViewColumnEventArgs)">
+	<summary>
+ Invalidates the drop-down button bounds when a column width changes
+ in the DataGridView control. A width change in any column of the 
+ control has the potential to affect the drop-down button location, 
+ depending on the current horizontal scrolling position and whether
+ the changed column is to the left or right of the current column. 
+ It is easier to invalidate the button in all cases. 
+ </summary>
+	<param name="sender">The object that raised the event.</param>
+	<param name="e">A DataGridViewColumnEventArgs that contains the event data.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.DataGridView_ColumnHeadersHeightChanged(System.Object,System.EventArgs)">
+	<summary>
+ Invalidates the drop-down button bounds when the height of the column headers changes.
+ </summary>
+	<param name="sender">The object that raised the event.</param>
+	<param name="e">An EventArgs that contains the event data.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.DataGridView_SizeChanged(System.Object,System.EventArgs)">
+	<summary>
+ Invalidates the drop-down button bounds when the size of the DataGridView changes.
+ This prevents a painting issue that occurs when the right edge of the control moves 
+ to the right and the control contents have previously been scrolled to the right.
+ </summary>
+	<param name="sender">The object that raised the event.</param>
+	<param name="e">An EventArgs that contains the event data.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.DataGridView_DataBindingComplete(System.Object,System.Windows.Forms.DataGridViewBindingCompleteEventArgs)">
+	<summary>
+ Invalidates the drop-down button bounds, hides the drop-down 
+ filter list, if it is showing, and resets the cached filter values
+ if the filter has been removed. 
+ </summary>
+	<param name="sender">The object that raised the event.</param>
+	<param name="e">A DataGridViewBindingCompleteEventArgs that contains the event data.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.DataGridView_DataSourceChanged(System.Object,System.EventArgs)">
+	<summary>
+ Verifies that the data source meets requirements, invalidates the 
+ drop-down button bounds, hides the drop-down filter list if it is 
+ showing, and resets the cached filter values if the filter has been removed. 
+ </summary>
+	<param name="sender">The object that raised the event.</param>
+	<param name="e">An EventArgs that contains the event data.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.ResetDropDown">
+	<summary>
+ Invalidates the drop-down button bounds and hides the filter
+ list if it is showing.
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.ResetFilter">
+	<summary>
+ Resets the cached filter values if the filter has been removed.
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.DataGridView_ColumnSortModeChanged(System.Object,System.Windows.Forms.DataGridViewColumnEventArgs)">
+	<summary>
+ Throws an exception when the column sort mode is changed to Automatic.
+ </summary>
+	<param name="sender">The object that raised the event.</param>
+	<param name="e">A DataGridViewColumnEventArgs that contains the event data.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Object,System.Object,System.String,System.Windows.Forms.DataGridViewCellStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Windows.Forms.DataGridViewPaintParts)">
+	<summary>
+ Paints the column header cell, including the drop-down button. 
+ </summary>
+	<param name="graphics">The Graphics used to paint the DataGridViewCell.</param>
+	<param name="clipBounds">A Rectangle that represents the area of the DataGridView that needs to be repainted.</param>
+	<param name="cellBounds">A Rectangle that contains the bounds of the DataGridViewCell that is being painted.</param>
+	<param name="rowIndex">The row index of the cell that is being painted.</param>
+	<param name="cellState">A bitwise combination of DataGridViewElementStates values that specifies the state of the cell.</param>
+	<param name="value">The data of the DataGridViewCell that is being painted.</param>
+	<param name="formattedValue">The formatted data of the DataGridViewCell that is being painted.</param>
+	<param name="errorText">An error message that is associated with the cell.</param>
+	<param name="cellStyle">A DataGridViewCellStyle that contains formatting and style information about the cell.</param>
+	<param name="advancedBorderStyle">A DataGridViewAdvancedBorderStyle that contains border styles for the cell that is being painted.</param>
+	<param name="paintParts">A bitwise combination of the DataGridViewPaintParts values that specifies which parts of the cell need to be painted.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.OnMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)">
+	<summary>
+ Handles mouse clicks to the header cell, displaying the 
+ drop-down list or sorting the owning column as appropriate. 
+ </summary>
+	<param name="e">A DataGridViewCellMouseEventArgs that contains the event data.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.SortByColumn">
+	<summary>
+ Sorts the DataGridView by the current column if AutomaticSortingEnabled is true.
+ </summary>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.dropDownListBoxShowing">
+	<summary>
+ Indicates whether dropDownListBox is currently displayed 
+ for this header cell. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.ShowDropDownList">
+	<summary>
+ Displays the drop-down filter list. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.HideDropDownList">
+	<summary>
+ Hides the drop-down filter list. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.SetDropDownListBoxBounds">
+	<summary>
+ Sets the dropDownListBox size and position based on the formatted 
+ values in the filters dictionary and the position of the drop-down 
+ button. Called only by ShowDropDownListBox.  
+ </summary>
+</member><member name="P:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.DropDownListBoxMaxHeightInternal">
+	<summary>
+ Gets the actual maximum height of the drop-down list, in pixels.
+ The maximum height is calculated from the DropDownListBoxMaxLines 
+ property value, but is limited to the available height of the 
+ DataGridView control. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.HandleDropDownListBoxEvents">
+	<summary>
+ Adds handlers to ListBox events for handling mouse
+ and keyboard input.
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.UnhandleDropDownListBoxEvents">
+	<summary>
+ Removes the ListBox event handlers. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.DropDownListBox_MouseClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ Adjusts the filter in response to a user selection from the drop-down list. 
+ </summary>
+	<param name="sender">The object that raised the event.</param>
+	<param name="e">A MouseEventArgs that contains the event data.</param>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.lostFocusOnDropDownButtonClick">
+	<summary>
+ Indicates whether the drop-down list lost focus because the
+ user clicked the drop-down button. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.DropDownListBox_LostFocus(System.Object,System.EventArgs)">
+	<summary>
+ Hides the drop-down list when it loses focus. 
+ </summary>
+	<param name="sender">The object that raised the event.</param>
+	<param name="e">An EventArgs that contains the event data.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.DropDownListBox_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Handles the ENTER and ESC keys.
+ </summary>
+	<param name="sender">The object that raised the event.</param>
+	<param name="e">A KeyEventArgs that contains the event data.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.PopulateFilters">
+	<summary>
+ Populates the filters dictionary with formatted and unformatted string
+ representations of each unique value in the column, accounting for all 
+ filters except the current column's. Also adds special filter options. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.FilterWithoutCurrentColumn(System.String)">
+	<summary>
+ Returns a copy of the specified filter string after removing the 
+ part that filters the current column, if present. 
+ </summary>
+	<param name="filter">The filter string to parse.</param>
+	<returns>A copy of the specified filter string 
+ without the current column's filter.</returns>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.UpdateFilter">
+	<summary>
+ Updates the BindingSource.Filter value based on a user selection
+ from the drop-down filter list. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.RemoveFilter(System.Windows.Forms.DataGridView)">
+	<summary>
+ Removes the filter from the BindingSource bound to the specified DataGridView. 
+ </summary>
+	<param name="dataGridView">The DataGridView bound to the BindingSource to unfilter.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.GetFilterStatus(System.Windows.Forms.DataGridView)">
+	<summary>
+ Gets a status string for the specified DataGridView indicating the 
+ number of visible rows in the bound, filtered BindingSource, or 
+ String.Empty if all rows are currently visible. 
+ </summary>
+	<param name="dataGridView">The DataGridView bound to the 
+ BindingSource to return the filter status for.</param>
+	<returns>A string in the format "x of y records found" where x is 
+ the number of rows currently displayed and y is the number of rows 
+ available, or String.Empty if all rows are currently displayed.</returns>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.dropDownButtonBoundsValue">
+	<summary>
+ The bounds of the drop-down button, or Rectangle.Empty if filtering 
+ is disabled or the button bounds need to be recalculated. 
+ </summary>
+</member><member name="P:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.DropDownButtonBounds">
+	<summary>
+ The bounds of the drop-down button, or Rectangle.Empty if filtering
+ is disabled. Recalculates the button bounds if filtering is enabled
+ and the bounds are empty.
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.InvalidateDropDownButtonBounds">
+	<summary>
+ Sets dropDownButtonBoundsValue to Rectangle.Empty if it isn't already empty. 
+ This indicates that the button bounds should be recalculated. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.SetDropDownButtonBounds">
+	<summary>
+ Sets the position and size of dropDownButtonBoundsValue based on the current 
+ cell bounds and the preferred cell height for a single line of header text. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.AdjustPadding(System.Int32)">
+	<summary>
+ Adjusts the cell padding to widen the header by the drop-down button width.
+ </summary>
+	<param name="newDropDownButtonPaddingOffset">The new drop-down button width.</param>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.currentDropDownButtonPaddingOffset">
+	<summary>
+ The current width of the drop-down button. This field is used to adjust the cell padding.  
+ </summary>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.filteringEnabledValue">
+	<summary>
+ Indicates whether filtering is enabled for the owning column. 
+ </summary>
+</member><member name="P:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.FilteringEnabled">
+	<summary>
+ Gets or sets a value indicating whether filtering is enabled.
+ </summary>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.automaticSortingEnabledValue">
+	<summary>
+ Indicates whether automatic sorting is enabled. 
+ </summary>
+</member><member name="P:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.AutomaticSortingEnabled">
+	<summary>
+ Gets or sets a value indicating whether automatic sorting is 
+ enabled for the owning column. 
+ </summary>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.dropDownListBoxMaxLinesValue">
+	<summary>
+ The maximum number of lines in the drop-down list. 
+ </summary>
+</member><member name="P:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.DropDownListBoxMaxLines">
+	<summary>
+ Gets or sets the maximum number of lines to display in the drop-down filter list. 
+ The actual height of the drop-down list is constrained by the DataGridView height. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.FilterListBox.#ctor">
+	<summary>
+ Initializes a new instance of the FilterListBox class.
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.FilterListBox.IsInputKey(System.Windows.Forms.Keys)">
+	<summary>
+ Indicates that the FilterListBox will handle (or ignore) all 
+ keystrokes that are not handled by the operating system. 
+ </summary>
+	<param name="keyData">A Keys value that represents the keyboard input.</param>
+	<returns>true in all cases.</returns>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.FilterListBox.ProcessKeyMessage(System.Windows.Forms.Message@)">
+	<summary>
+ Processes a keyboard message directly, preventing it from being
+ intercepted by the parent DataGridView control.
+ </summary>
+	<param name="m">A Message, passed by reference, that 
+ represents the window message to process.</param>
+	<returns>true if the message was processed by the control;
+ otherwise, false.</returns>
+</member><member name="T:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2.FilterListBox">
+	<summary>
+ Represents a ListBox control used as a drop-down filter list
+ in a DataGridView control.
+ </summary>
+</member><member name="T:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell2">
+	<summary>
+ Provides a drop-down filter list in a DataGridViewColumnHeaderCell.
+ </summary>
+</member><member name="P:DataGridViewAutoFilter.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:DataGridViewAutoFilter.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:DataGridViewAutoFilter.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.dropDownListBox">
+	<summary>
+ The ListBox used for all drop-down lists. 
+ </summary>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.filters">
+	<summary>
+ A list of filters available for the owning column stored as 
+ formatted and unformatted string values. 
+ </summary>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.selectedFilterValue">
+	<summary>
+ The drop-down list filter value currently in effect for 
+ the owning column. 
+ </summary>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.currentColumnFilter">
+	<summary>
+ The complete filter string currently in effect for the owning column. 
+ </summary>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.filtered">
+	<summary>
+ Indicates whether the DataGridView is currently filtered by the 
+ owning column.  
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.#ctor(System.Windows.Forms.DataGridViewColumnHeaderCell)">
+	<summary>
+ Initializes a new instance of the DataGridViewColumnHeaderCell 
+ class and sets its property values to the property values of the 
+ specified DataGridViewColumnHeaderCell.
+ </summary>
+	<param name="oldHeaderCell">The DataGridViewColumnHeaderCell to 
+ copy property values from.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.#ctor">
+	<summary>
+ Initializes a new instance of the DataGridViewColumnHeaderCell 
+ class. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.Clone">
+	<summary>
+ Creates an exact copy of this cell.
+ </summary>
+	<returns>An object that represents the cloned 
+ DataGridViewAutoFilterColumnHeaderCell.</returns>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.OnDataGridViewChanged">
+	<summary>
+ Called when the value of the DataGridView property changes
+ in order to perform initialization that requires access to the 
+ owning control and column. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.VerifyDataSource">
+	<summary>
+ Confirms that the data source, if it has been set, is a BindingSource.
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.HandleDataGridViewEvents">
+	<summary>
+ Add handlers to various DataGridView events, primarily to invalidate 
+ the drop-down button bounds, hide the drop-down list, and reset 
+ cached filter values when changes in the DataGridView require it.
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.DataGridView_Scroll(System.Object,System.Windows.Forms.ScrollEventArgs)">
+	<summary>
+ Invalidates the drop-down button bounds when 
+ the user scrolls horizontally.
+ </summary>
+	<param name="sender">The object that raised the event.</param>
+	<param name="e">A ScrollEventArgs that contains the event data.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.DataGridView_ColumnDisplayIndexChanged(System.Object,System.Windows.Forms.DataGridViewColumnEventArgs)">
+	<summary>
+ Invalidates the drop-down button bounds when 
+ the column display index changes.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.DataGridView_ColumnWidthChanged(System.Object,System.Windows.Forms.DataGridViewColumnEventArgs)">
+	<summary>
+ Invalidates the drop-down button bounds when a column width changes
+ in the DataGridView control. A width change in any column of the 
+ control has the potential to affect the drop-down button location, 
+ depending on the current horizontal scrolling position and whether
+ the changed column is to the left or right of the current column. 
+ It is easier to invalidate the button in all cases. 
+ </summary>
+	<param name="sender">The object that raised the event.</param>
+	<param name="e">A DataGridViewColumnEventArgs that contains the event data.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.DataGridView_ColumnHeadersHeightChanged(System.Object,System.EventArgs)">
+	<summary>
+ Invalidates the drop-down button bounds when the height of the column headers changes.
+ </summary>
+	<param name="sender">The object that raised the event.</param>
+	<param name="e">An EventArgs that contains the event data.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.DataGridView_SizeChanged(System.Object,System.EventArgs)">
+	<summary>
+ Invalidates the drop-down button bounds when the size of the DataGridView changes.
+ This prevents a painting issue that occurs when the right edge of the control moves 
+ to the right and the control contents have previously been scrolled to the right.
+ </summary>
+	<param name="sender">The object that raised the event.</param>
+	<param name="e">An EventArgs that contains the event data.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.DataGridView_DataBindingComplete(System.Object,System.Windows.Forms.DataGridViewBindingCompleteEventArgs)">
+	<summary>
+ Invalidates the drop-down button bounds, hides the drop-down 
+ filter list, if it is showing, and resets the cached filter values
+ if the filter has been removed. 
+ </summary>
+	<param name="sender">The object that raised the event.</param>
+	<param name="e">A DataGridViewBindingCompleteEventArgs that contains the event data.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.DataGridView_DataSourceChanged(System.Object,System.EventArgs)">
+	<summary>
+ Verifies that the data source meets requirements, invalidates the 
+ drop-down button bounds, hides the drop-down filter list if it is 
+ showing, and resets the cached filter values if the filter has been removed. 
+ </summary>
+	<param name="sender">The object that raised the event.</param>
+	<param name="e">An EventArgs that contains the event data.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.ResetDropDown">
+	<summary>
+ Invalidates the drop-down button bounds and hides the filter
+ list if it is showing.
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.ResetFilter">
+	<summary>
+ Resets the cached filter values if the filter has been removed.
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.DataGridView_ColumnSortModeChanged(System.Object,System.Windows.Forms.DataGridViewColumnEventArgs)">
+	<summary>
+ Throws an exception when the column sort mode is changed to Automatic.
+ </summary>
+	<param name="sender">The object that raised the event.</param>
+	<param name="e">A DataGridViewColumnEventArgs that contains the event data.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Object,System.Object,System.String,System.Windows.Forms.DataGridViewCellStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Windows.Forms.DataGridViewPaintParts)">
+	<summary>
+ Paints the column header cell, including the drop-down button. 
+ </summary>
+	<param name="graphics">The Graphics used to paint the DataGridViewCell.</param>
+	<param name="clipBounds">A Rectangle that represents the area of the DataGridView that needs to be repainted.</param>
+	<param name="cellBounds">A Rectangle that contains the bounds of the DataGridViewCell that is being painted.</param>
+	<param name="rowIndex">The row index of the cell that is being painted.</param>
+	<param name="cellState">A bitwise combination of DataGridViewElementStates values that specifies the state of the cell.</param>
+	<param name="value">The data of the DataGridViewCell that is being painted.</param>
+	<param name="formattedValue">The formatted data of the DataGridViewCell that is being painted.</param>
+	<param name="errorText">An error message that is associated with the cell.</param>
+	<param name="cellStyle">A DataGridViewCellStyle that contains formatting and style information about the cell.</param>
+	<param name="advancedBorderStyle">A DataGridViewAdvancedBorderStyle that contains border styles for the cell that is being painted.</param>
+	<param name="paintParts">A bitwise combination of the DataGridViewPaintParts values that specifies which parts of the cell need to be painted.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.OnMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)">
+	<summary>
+ Handles mouse clicks to the header cell, displaying the 
+ drop-down list or sorting the owning column as appropriate. 
+ </summary>
+	<param name="e">A DataGridViewCellMouseEventArgs that contains the event data.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.SortByColumn">
+	<summary>
+ Sorts the DataGridView by the current column if AutomaticSortingEnabled is true.
+ </summary>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.dropDownListBoxShowing">
+	<summary>
+ Indicates whether dropDownListBox is currently displayed 
+ for this header cell. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.ShowDropDownList">
+	<summary>
+ Displays the drop-down filter list. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.HideDropDownList">
+	<summary>
+ Hides the drop-down filter list. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.SetDropDownListBoxBounds">
+	<summary>
+ Sets the dropDownListBox size and position based on the formatted 
+ values in the filters dictionary and the position of the drop-down 
+ button. Called only by ShowDropDownListBox.  
+ </summary>
+</member><member name="P:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.DropDownListBoxMaxHeightInternal">
+	<summary>
+ Gets the actual maximum height of the drop-down list, in pixels.
+ The maximum height is calculated from the DropDownListBoxMaxLines 
+ property value, but is limited to the available height of the 
+ DataGridView control. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.HandleDropDownListBoxEvents">
+	<summary>
+ Adds handlers to ListBox events for handling mouse
+ and keyboard input.
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.UnhandleDropDownListBoxEvents">
+	<summary>
+ Removes the ListBox event handlers. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.DropDownListBox_MouseClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ Adjusts the filter in response to a user selection from the drop-down list. 
+ </summary>
+	<param name="sender">The object that raised the event.</param>
+	<param name="e">A MouseEventArgs that contains the event data.</param>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.lostFocusOnDropDownButtonClick">
+	<summary>
+ Indicates whether the drop-down list lost focus because the
+ user clicked the drop-down button. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.DropDownListBox_LostFocus(System.Object,System.EventArgs)">
+	<summary>
+ Hides the drop-down list when it loses focus. 
+ </summary>
+	<param name="sender">The object that raised the event.</param>
+	<param name="e">An EventArgs that contains the event data.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.DropDownListBox_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Handles the ENTER and ESC keys.
+ </summary>
+	<param name="sender">The object that raised the event.</param>
+	<param name="e">A KeyEventArgs that contains the event data.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.PopulateFilters">
+	<summary>
+ Populates the filters dictionary with formatted and unformatted string
+ representations of each unique value in the column, accounting for all 
+ filters except the current column's. Also adds special filter options. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.FilterWithoutCurrentColumn(System.String)">
+	<summary>
+ Returns a copy of the specified filter string after removing the 
+ part that filters the current column, if present. 
+ </summary>
+	<param name="filter">The filter string to parse.</param>
+	<returns>A copy of the specified filter string 
+ without the current column's filter.</returns>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.UpdateFilter">
+	<summary>
+ Updates the BindingSource.Filter value based on a user selection
+ from the drop-down filter list. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.RemoveFilter(System.Windows.Forms.DataGridView)">
+	<summary>
+ Removes the filter from the BindingSource bound to the specified DataGridView. 
+ </summary>
+	<param name="dataGridView">The DataGridView bound to the BindingSource to unfilter.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.GetFilterStatus(System.Windows.Forms.DataGridView)">
+	<summary>
+ Gets a status string for the specified DataGridView indicating the 
+ number of visible rows in the bound, filtered BindingSource, or 
+ String.Empty if all rows are currently visible. 
+ </summary>
+	<param name="dataGridView">The DataGridView bound to the 
+ BindingSource to return the filter status for.</param>
+	<returns>A string in the format "x of y records found" where x is 
+ the number of rows currently displayed and y is the number of rows 
+ available, or String.Empty if all rows are currently displayed.</returns>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.dropDownButtonBoundsValue">
+	<summary>
+ The bounds of the drop-down button, or Rectangle.Empty if filtering 
+ is disabled or the button bounds need to be recalculated. 
+ </summary>
+</member><member name="P:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.DropDownButtonBounds">
+	<summary>
+ The bounds of the drop-down button, or Rectangle.Empty if filtering
+ is disabled. Recalculates the button bounds if filtering is enabled
+ and the bounds are empty.
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.InvalidateDropDownButtonBounds">
+	<summary>
+ Sets dropDownButtonBoundsValue to Rectangle.Empty if it isn't already empty. 
+ This indicates that the button bounds should be recalculated. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.SetDropDownButtonBounds">
+	<summary>
+ Sets the position and size of dropDownButtonBoundsValue based on the current 
+ cell bounds and the preferred cell height for a single line of header text. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.AdjustPadding(System.Int32)">
+	<summary>
+ Adjusts the cell padding to widen the header by the drop-down button width.
+ </summary>
+	<param name="newDropDownButtonPaddingOffset">The new drop-down button width.</param>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.currentDropDownButtonPaddingOffset">
+	<summary>
+ The current width of the drop-down button. This field is used to adjust the cell padding.  
+ </summary>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.filteringEnabledValue">
+	<summary>
+ Indicates whether filtering is enabled for the owning column. 
+ </summary>
+</member><member name="P:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.FilteringEnabled">
+	<summary>
+ Gets or sets a value indicating whether filtering is enabled.
+ </summary>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.automaticSortingEnabledValue">
+	<summary>
+ Indicates whether automatic sorting is enabled. 
+ </summary>
+</member><member name="P:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.AutomaticSortingEnabled">
+	<summary>
+ Gets or sets a value indicating whether automatic sorting is 
+ enabled for the owning column. 
+ </summary>
+</member><member name="F:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.dropDownListBoxMaxLinesValue">
+	<summary>
+ The maximum number of lines in the drop-down list. 
+ </summary>
+</member><member name="P:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.DropDownListBoxMaxLines">
+	<summary>
+ Gets or sets the maximum number of lines to display in the drop-down filter list. 
+ The actual height of the drop-down list is constrained by the DataGridView height. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.FilterListBox.#ctor">
+	<summary>
+ Initializes a new instance of the FilterListBox class.
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.FilterListBox.IsInputKey(System.Windows.Forms.Keys)">
+	<summary>
+ Indicates that the FilterListBox will handle (or ignore) all 
+ keystrokes that are not handled by the operating system. 
+ </summary>
+	<param name="keyData">A Keys value that represents the keyboard input.</param>
+	<returns>true in all cases.</returns>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.FilterListBox.ProcessKeyMessage(System.Windows.Forms.Message@)">
+	<summary>
+ Processes a keyboard message directly, preventing it from being
+ intercepted by the parent DataGridView control.
+ </summary>
+	<param name="m">A Message, passed by reference, that 
+ represents the window message to process.</param>
+	<returns>true if the message was processed by the control;
+ otherwise, false.</returns>
+</member><member name="T:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell.FilterListBox">
+	<summary>
+ Represents a ListBox control used as a drop-down filter list
+ in a DataGridView control.
+ </summary>
+</member><member name="T:DataGridViewAutoFilter.DataGridViewAutoFilterColumnHeaderCell">
+	<summary>
+ Provides a drop-down filter list in a DataGridViewColumnHeaderCell.
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn.#ctor">
+	<summary>
+ Initializes a new instance of the DataGridViewAutoFilterTextBoxColumn class.
+ </summary>
+</member><member name="P:DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn.DefaultHeaderCellType">
+	<summary>
+ Returns the AutoFilter header cell type. This property hides the 
+ non-virtual DefaultHeaderCellType property inherited from the 
+ DataGridViewBand class. The inherited property is set in the 
+ DataGridViewAutoFilterTextBoxColumn constructor. 
+ </summary>
+</member><member name="P:DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn.SortMode">
+	<summary>
+ Gets or sets the sort mode for the column and prevents it from being 
+ set to Automatic, which would interfere with the proper functioning 
+ of the drop-down button. This property hides the non-virtual 
+ DataGridViewColumn.SortMode property from the designer. The inherited 
+ property is set in the DataGridViewAutoFilterTextBoxColumn constructor.
+ </summary>
+</member><member name="P:DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn.FilteringEnabled">
+	<summary>
+ Gets or sets a value indicating whether filtering is enabled for this column. 
+ </summary>
+</member><member name="P:DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn.AutomaticSortingEnabled">
+	<summary>
+ Gets or sets a value indicating whether automatic sorting is enabled for this column. 
+ </summary>
+</member><member name="P:DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn.DropDownListBoxMaxLines">
+	<summary>
+ Gets or sets the maximum height of the drop-down filter list for this column. 
+ </summary>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn.RemoveFilter(System.Windows.Forms.DataGridView)">
+	<summary>
+ Removes the filter from the BindingSource bound to the specified DataGridView. 
+ </summary>
+	<param name="dataGridView">The DataGridView bound to the BindingSource to unfilter.</param>
+</member><member name="M:DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn.GetFilterStatus(System.Windows.Forms.DataGridView)">
+	<summary>
+ Gets a status string for the specified DataGridView indicating the 
+ number of visible rows in the bound, filtered BindingSource, or 
+ String.Empty if all rows are currently visible. 
+ </summary>
+	<param name="dataGridView">The DataGridView bound to the 
+ BindingSource to return the filter status for.</param>
+	<returns>A string in the format "x of y records found" where x is 
+ the number of rows currently displayed and y is the number of rows 
+ available, or String.Empty if all rows are currently displayed.</returns>
+</member><member name="T:DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn">
+	<summary>
+ Represents a DataGridViewTextBoxColumn with a drop-down filter list accessible from the header cell.  
+ </summary>
+</member>
+</members>
+</doc>

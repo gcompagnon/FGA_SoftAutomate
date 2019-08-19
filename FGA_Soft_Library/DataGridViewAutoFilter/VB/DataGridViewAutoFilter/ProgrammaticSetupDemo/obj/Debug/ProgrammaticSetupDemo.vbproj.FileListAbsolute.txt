@@ -1,0 +1,14 @@
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\ProgrammaticSetupDemo\bin\Debug\ProgrammaticSetupDemo.exe
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\ProgrammaticSetupDemo\bin\Debug\ProgrammaticSetupDemo.pdb
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\ProgrammaticSetupDemo\bin\Debug\ProgrammaticSetupDemo.xml
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\ProgrammaticSetupDemo\bin\Debug\DataGridViewAutoFilter.dll
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\ProgrammaticSetupDemo\bin\Debug\DataGridViewAutoFilter.pdb
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\ProgrammaticSetupDemo\bin\Debug\DataGridViewAutoFilter.xml
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\ProgrammaticSetupDemo\obj\Debug\ResolveAssemblyReference.cache
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\ProgrammaticSetupDemo\obj\Debug\ProgrammaticSetupDemo.Resources.resources
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\ProgrammaticSetupDemo\obj\Debug\GenerateResource.read.1.tlog
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\ProgrammaticSetupDemo\obj\Debug\GenerateResource.write.1.tlog
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\ProgrammaticSetupDemo\obj\Debug\ProgrammaticSetupDemo.exe
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\ProgrammaticSetupDemo\obj\Debug\ProgrammaticSetupDemo.xml
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\ProgrammaticSetupDemo\obj\Debug\ProgrammaticSetupDemo.pdb
+C:\FGA_SOFT\DEVELOPPEMENT\SAMPLE\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\ProgrammaticSetupDemo\obj\Debug\ProgrammaticSetupDemo.ProgrammaticSetupForm.resources

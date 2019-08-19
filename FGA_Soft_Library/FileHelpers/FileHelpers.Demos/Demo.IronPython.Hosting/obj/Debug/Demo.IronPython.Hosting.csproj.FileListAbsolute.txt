@@ -1,0 +1,26 @@
+C:\FGA_SOFT\EXTERN\FileHelpers\FileHelpers_Source_2.1.0\Debug\Demos\Net 2.0\IronPython\CinListCopyrightRecord.xml
+C:\FGA_SOFT\EXTERN\FileHelpers\FileHelpers_Source_2.1.0\Debug\Demos\Net 2.0\IronPython\CinListDetailRecord.xml
+C:\FGA_SOFT\EXTERN\FileHelpers\FileHelpers_Source_2.1.0\Debug\Demos\Net 2.0\IronPython\READ ME.txt
+C:\FGA_SOFT\EXTERN\FileHelpers\FileHelpers_Source_2.1.0\Debug\Demos\Net 2.0\IronPython\test.py
+C:\FGA_SOFT\EXTERN\FileHelpers\FileHelpers_Source_2.1.0\Debug\Demos\Net 2.0\IronPython\Demo.IronPython.Hosting.exe
+C:\FGA_SOFT\EXTERN\FileHelpers\FileHelpers_Source_2.1.0\Debug\Demos\Net 2.0\IronPython\Demo.IronPython.Hosting.pdb
+C:\FGA_SOFT\EXTERN\FileHelpers\FileHelpers_Source_2.1.0\FileHelpers.Demos\Demo.IronPython.Hosting\obj\Debug\ResolveAssemblyReference.cache
+C:\FGA_SOFT\EXTERN\FileHelpers\FileHelpers_Source_2.1.0\FileHelpers.Demos\Demo.IronPython.Hosting\obj\Debug\Demo.IronPython.Hosting.DemoForm.resources
+C:\FGA_SOFT\EXTERN\FileHelpers\FileHelpers_Source_2.1.0\FileHelpers.Demos\Demo.IronPython.Hosting\obj\Debug\Demo.IronPython.Hosting.Properties.Resources.resources
+C:\FGA_SOFT\EXTERN\FileHelpers\FileHelpers_Source_2.1.0\FileHelpers.Demos\Demo.IronPython.Hosting\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\FGA_SOFT\EXTERN\FileHelpers\FileHelpers_Source_2.1.0\FileHelpers.Demos\Demo.IronPython.Hosting\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\FGA_SOFT\EXTERN\FileHelpers\FileHelpers_Source_2.1.0\FileHelpers.Demos\Demo.IronPython.Hosting\obj\Debug\Demo.IronPython.Hosting.exe
+C:\FGA_SOFT\EXTERN\FileHelpers\FileHelpers_Source_2.1.0\FileHelpers.Demos\Demo.IronPython.Hosting\obj\Debug\Demo.IronPython.Hosting.pdb
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\FileHelpers\Debug\Demos\Net 2.0\IronPython\CinListCopyrightRecord.xml
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\FileHelpers\Debug\Demos\Net 2.0\IronPython\CinListDetailRecord.xml
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\FileHelpers\Debug\Demos\Net 2.0\IronPython\READ ME.txt
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\FileHelpers\Debug\Demos\Net 2.0\IronPython\test.py
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\FileHelpers\Debug\Demos\Net 2.0\IronPython\Demo.IronPython.Hosting.exe
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\FileHelpers\Debug\Demos\Net 2.0\IronPython\Demo.IronPython.Hosting.pdb
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\FileHelpers\FileHelpers.Demos\Demo.IronPython.Hosting\obj\Debug\ResolveAssemblyReference.cache
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\FileHelpers\FileHelpers.Demos\Demo.IronPython.Hosting\obj\Debug\Demo.IronPython.Hosting.DemoForm.resources
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\FileHelpers\FileHelpers.Demos\Demo.IronPython.Hosting\obj\Debug\Demo.IronPython.Hosting.Properties.Resources.resources
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\FileHelpers\FileHelpers.Demos\Demo.IronPython.Hosting\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\FileHelpers\FileHelpers.Demos\Demo.IronPython.Hosting\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\FileHelpers\FileHelpers.Demos\Demo.IronPython.Hosting\obj\Debug\Demo.IronPython.Hosting.exe
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\FileHelpers\FileHelpers.Demos\Demo.IronPython.Hosting\obj\Debug\Demo.IronPython.Hosting.pdb

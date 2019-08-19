@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<DbSets>
+
+
+	<Indexes>
+	<!--Index>
+	<Items>
+				<Asset>
+			<Description>Exemple de titre2</Description>
+			<SecurityIdentification><SecurityIdentification>DD0000000000</SecurityIdentification></SecurityIdentification>
+			<EffectiveDate>01/01/2012</EffectiveDate>
+			<MarketCapitalization>
+			<Value>1000001112</Value>
+			<Currency>CHF</Currency>
+			</MarketCapitalization>
+			<InvestmentRate><Value>2.2364</Value></InvestmentRate>
+			<HeldNumber><Rate><Value>1.2</Value></Rate><Unit>266666000</Unit><Amount><Value>1.1112</Value><Currency>CHF</Currency></Amount></HeldNumber>
+			</Asset>
+
+	</Items>
+	</Index-->
+		<!--IndexBasket type="FGABusinessComponent.BusinessComponent.IndexComp.IndexBasket">
+			<Identification>
+				<SecurityIdentification>FR2224567890</SecurityIdentification>
+				<DomesticIdentificationSource>FR</DomesticIdentificationSource>
+				<Bloomberg>FP FP</Bloomberg>
+			</Identification>
+			<IndexFixingDate>01/01/2000 14:30</IndexFixingDate>
+			<IndexFrequency>MONTHLY</IndexFrequency>
+			<IndexCurrency>EUR</IndexCurrency>
+			<Compo>
+			<Asset>
+			<Description>Exemple de titre1</Description>
+			<SecurityIdentification><SecurityIdentification>CC0000000000</SecurityIdentification></SecurityIdentification>
+			<EffectiveDate>01/01/2012</EffectiveDate>
+			<MarketCapitalization>
+			<Value>1000001112</Value>
+			<Currency>CHF</Currency>
+			</MarketCapitalization>
+			<InvestmentRate><Value>2.2364</Value></InvestmentRate>
+			<HeldNumber><Rate><Value>1.2</Value></Rate><Unit>266666000</Unit><Amount><Value>1.1112</Value><Currency>CHF</Currency></Amount></HeldNumber>
+			</Asset>
+			<Asset>
+			<Description>Exemple de titre2</Description>
+			<SecurityIdentification><SecurityIdentification>DD0000000000</SecurityIdentification></SecurityIdentification>
+			<EffectiveDate>01/01/2012</EffectiveDate>
+			<MarketCapitalization>
+			<Value>1000001112</Value>
+			<Currency>CHF</Currency>
+			</MarketCapitalization>
+			<InvestmentRate><Value>2.2364</Value></InvestmentRate>
+			<HeldNumber><Rate><Value>1.2</Value></Rate><Unit>266666000</Unit><Amount><Value>1.1112</Value><Currency>CHF</Currency></Amount></HeldNumber>
+			</Asset>
+			
+			</Compo>
+		</IndexBasket-->
+	</Indexes>
+
+	<!--<Locations>
+		<Location>
+			<City>Boston</City>
+			<Users>
+				<User>
+					<Name>Mary</Name>
+					<Age>21</Age>
+					<Roles>
+						<Role usekey="admin" />
+						<Role usekey="user" />
+					</Roles>
+				</User>
+				<User>
+					<Name>Bob</Name>
+					<Age>45</Age>
+					<Roles>
+						<Role usekey="user" />
+					</Roles>
+				</User>
+			</Users>
+		</Location>
+		<Location>
+			<City>Chicago</City>
+			<Users>
+				<User>
+					<Name>Tom</Name>
+					<Age>33</Age>
+					<Roles>
+						<Role usekey="admin" />
+						<Role usekey="user" />
+					</Roles>
+				</User>
+			</Users>
+		</Location>
+	</Locations>-->
+</DbSets>

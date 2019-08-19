@@ -1,0 +1,20 @@
+graph:modele;titre;colonneLegendes;colonneDonnees
+serie:NULL;[boolean];colonneLegende;colonneDonnees
+meta:modele;titre;[transpose];serie,serie,serie
+tableau:indiceDataTable
+
+NOTE : le booleen optionel dans la déinition d'une série permet de choisir le nom de cete série
+si absent (Exemple : #serie1:;;libelle;last ) -> le nom de la série est celui de la sheet
+si présent  (Exemple : #serie1:;1;libelle;last ) -> le nom de la série est celui de la colonne de donnée
+
+
+
+#graph1:modele1;Repartition;libelle;last
+
+#graph2:modele2;Repartition;libelle;last
+
+#meta1:modele3;Repartition des Obligations;serie1,serie2,serie3,serie4
+#serie1:;;libelle;RETRAITE
+#serie2:;;libelle;ASSURANCE
+#serie3:;;libelle;TOTAL EXTERNE
+#serie4:;;libelle;FGA

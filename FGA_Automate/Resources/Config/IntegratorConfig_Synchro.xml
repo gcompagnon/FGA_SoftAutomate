@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<integrator name="OTC_Trades">  
+  <producers>
+    <producer name="SQLrequest" type="Producer.SQLrequest">
+       <SQL>
+        <file>SQL/Requete_quoti.sql</file>
+         <param name="Date">$DATE</param>
+      </SQL>
+      
+      <data option="Developpement">
+        <file>login.ini</file>
+      </data>
+
+      <data option="Recette">
+        <!-->connectionString>server = MEPAPP042_R ; Integrated Security = true ; database = OMEGA</connectionString-->
+        <connectionString>server = MEPAPP042_R ; uid= E2FGATP ; pwd = E2FGATP25 ; database = E2DBFGA01</connectionString>
+      </data>
+
+      <data option="Production">
+        <USER>OMEGA_LEC</USER>
+        <PASSWORD>OMEGA_LEC2011</PASSWORD>
+        <SERVER>WINPRODFGA\Q1</SERVER>
+        <DATABASE>OMEGA</DATABASE>
+      </data>
+            
+    </producer>
+  </producers>
+
+  <consumers>
+    <consumer name="BP2Stext" type="Consumer.BP2SText">
+      <file  option="Recette">
+        toto.txt
+      </file>
+      <regex  option="Recette">
+        Resources/Consumer/BP2QtextValidation.txt
+      </regex>
+    </consumer>
+    
+    <consumer name="ExcelDump" type="Consumer.BP2SText">
+      <file  option="Recette">
+        toto.xls
+      </file>
+    </consumer>
+  </consumers>
+</integrator>

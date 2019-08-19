@@ -1,0 +1,17 @@
+
+sous titres en vert
+#cellule Calibri; 11;false;;R204G255B204;;;;;3
+#cellule Calibri; 11;false;;R204G255B204;;;Thick;Thick;10
+#ligne 1;1;1;1;1;2
+
+titre en jaune
+#cellule Calibri; 11;false;;R255G255B153;;;;; 3
+#cellule Calibri; 11;false;;R255G255B153;;;Thick;Thick;10
+#ligne 1;1;1;1;1;2
+
+corps 
+#cellule Calibri; 11;false;;;;;;; 3
+#cellule Calibri; 11;false;;;;;Thick;Thick;10
+#ligne 1;1;1;1;1;2
+
+

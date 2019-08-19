@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/AutoMapper/bin/Debug
+/AutoMapper/obj/Debug
+/FileHelpers/Debug/Net 2.0
+/FileHelpers/FileHelpers/obj/Debug
+/FileHelpers/FileHelpers.ExcelStorage/obj/Debug
+/ReactiveETL/ReactiveETL/bin/Debug
+/ReactiveETL/ReactiveETL/obj/Debug
+/ReactiveETL/ReactiveETL.Tests/bin/Debug
+/ReactiveETL/ReactiveETL.Tests/obj/Debug

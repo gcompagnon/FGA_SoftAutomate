@@ -1,0 +1,12 @@
+C:\DATA\GIT\FGA_Soft_Automate\FGA_Soft_Library\CommandLine\bin\Debug\CommandLine.dll.config
+C:\DATA\GIT\FGA_Soft_Automate\FGA_Soft_Library\CommandLine\bin\Debug\CommandLine.dll
+C:\DATA\GIT\FGA_Soft_Automate\FGA_Soft_Library\CommandLine\bin\Debug\CommandLine.pdb
+C:\DATA\GIT\FGA_Soft_Automate\FGA_Soft_Library\CommandLine\obj\Debug\CommandLine.dll
+C:\DATA\GIT\FGA_Soft_Automate\FGA_Soft_Library\CommandLine\obj\Debug\CommandLine.pdb
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\CommandLine\bin\Debug\CommandLine.dll.config
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\CommandLine\bin\Debug\CommandLine.dll
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\CommandLine\bin\Debug\CommandLine.pdb
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\CommandLine\obj\Debug\CommandLine.csprojAssemblyReference.cache
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\CommandLine\obj\Debug\CommandLine.csproj.CoreCompileInputs.cache
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\CommandLine\obj\Debug\CommandLine.dll
+C:\localGIT\FGA_Soft_Automate\FGA_Soft_Library\CommandLine\obj\Debug\CommandLine.pdb

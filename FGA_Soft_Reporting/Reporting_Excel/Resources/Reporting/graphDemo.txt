@@ -1,0 +1,29 @@
+graph:modele;titre;colonneLegendes;colonneDonnees
+serie:NULL;NULL;colonneLegende;colonneDonnees
+meta:modele;titre;[transpose];serie,serie,serie
+tableau:indiceDataTable
+
+
+
+#graph1:modele1;Repartition;libelle;last
+
+#graph2:modele2;Repartition;libelle;last
+
+#meta1:modele3;Repartition des Obligations;serie1,serie2,serie3,serie4
+#serie1:;;libelle;RETRAITE
+#serie2:;;libelle;ASSURANCE
+#serie3:;;libelle;TOTAL EXTERNE
+#serie4:;;libelle;FGA
+
+#meta2:modele4;Repartition des Obligations Cones;serie1,serie2,serie3,serie4
+
+#meta3:modele5;Repartition des Obligations Lignes;serie1,serie2,serie3,serie4
+
+#meta4:modele6;Repartition des Obligations Barres;serie5,serie6,serie7,serie8
+#serie5:;;libelle;RETRAITE
+#serie6:;;libelle;ASSURANCE
+#serie7:;;libelle;TOTAL EXTERNE
+#serie8:;;libelle;FGA
+
+
+#tableau:1

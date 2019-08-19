@@ -1,0 +1,211 @@
+Version 3.4.3:
+=============
+- Connection timeout configurable via SessionOptions
+	The default connection timout changed to be 5 sec. Users can change
+	that value using SessionOptions::setConnectTimeout().
+
+- Expose more EMRS information to users
+	Added userName, appName, serviceName and deviceAddress to permission
+	request.
+
+- Datetime can now be used as a Dictionary key
+
+- Stability improvements
+
+Version 3.4.2:
+==============
+- Stability release
+	Bloomberglp.Blpapi.dll assembly is now marked with
+	System.Security.AllowPartiallyTrustedCallers attribute, as such it can
+	now be used by partially trusted callers.
+
+Version 3.4.1:
+==============
+- Differentiate log messages based on session id in the log file
+	When a single process has more than one active session, log messages coming
+	from different sessions are tagged with the session id.
+
+- Topic.IsValid() has been removed
+	When a topic does not exist we return null instead of an empty invalid
+	Topic object.
+
+- Support concurrent openService & registerService operations
+	Multiple ProviderSession.OpenService() & ProviderSession.RegisterService()
+	operations can run concurrently. Either if started explicitly or
+	implicitly via ProviderSession.resolve(), ProviderSession.createTopics(),
+	and Session.subscribe() calls.
+
+- Connection timeout consist with C++ implementation
+	Session TCP connect will timeout after 2 seconds in case destination host
+	is unreachable (as in other SDKs).
+
+Version 3.4.0:
+==============
+- All new ProviderSession, independent from Sesssion:
+	Initial publishing implementation offered ProviderSession which was a
+	subclass of Session. Thus it was possible to do subscriptions on
+	ProviderSession. It's no longer the case: ProviderSession and Session
+	are no longer related; new classes provide a true "writer" and "reader"
+	interfaces respectively. New session classes share a common base -
+	AbstractSession, which defines interfaces for session control, and
+	user authorization.
+
+- Multiple publisher support:
+	Multiple publishers for the same feed/topic are now supported, providing
+	redundancy/fan-in services.
+	- Publisher group ID: When registering a service you now can specify
+	  a group ID. If not specified, each provider session will have a
+	  unique group ID (default behavior). The group ID is used for
+	  clustering together a set of service publishers.
+	  The group ID controls the behavior of the multiple publishers. Using
+	  the same group ID for a set of publishers you can provide redundancy
+	  between the publishers. Using a different group IDs users can
+	  implement publisher fan-in (for the same or different topics).
+
+	- Redundancy: When publishers are registered with the same group ID, the
+	  platform will manage the list of publishers and will activate the
+	  feed from only one of them at any given time.
+	  In order to support this feature two new TOPIC_STATUS messages exist:
+	  TopicActivated & TopicDeactivated.
+	  A publisher should start publishing on a given topic only after a
+	  TopicActivated message has been received. When a publisher receives
+	  the TopicDeactivated notification message, it should stop publishing
+	  on the topic.
+	  All information that is streamed from a publisher before it received
+	  the TopicActivated message, or after it received the
+	  TopicDeactivated message will be discarded by the platform.
+	  Publishers on the same group are required to publish identical tick
+	  streams.
+
+	- Topic fan-in: Information from different group IDs publishers will be
+	  combined in to one stream torward the subscribers. It's up to the
+	  publishers to make sure that different group IDs will not publish
+	  redundant information.
+	  Setting the group ID:
+	  ...
+	  ServiceRegistrationOptions options = new ServiceRegistrationOptions();
+	  options.GroupId = "SomeGroupID";
+	  providerSession.RegisterService(serviceName, identity, options);
+	  ...
+
+- Failover support for both publisher- and subscriber-type clients
+	A session can be provided with a list of platform servers. Depending
+	on the session configuration, if the platform server goes down the
+	session will try to reconnect to the next platform server in the list.
+	By default, the auto restart option is disabled, to enable it do:
+	...
+	SessionOptions options = new SessionOptions();
+	options.AutoRestartOnDisconnection = true;
+	ProviderSession session = new ProviderSession(options, myEventHandler);
+	...
+
+	Users should expect that sometimes (the worst case scenario) the
+	library might not be able to failover some published services or topics
+	to the backup system and will notify the user with
+	ServiceFailoverError and TopicFailoverError messages as appropriate.
+
+- Topic creation/resolution:
+	The API ProviderSession.CreateTopic() has been deprecated.
+
+	Topic resolution and management has moved from the library to the
+	platform server, thus each time the library is trying to resolve or
+	create a topic, a message is sent to the platform. In order to save in
+	bandwidth and response time the new API supports creation of multiple
+	topics in a single call.
+
+	Once a topic has been created it is cached by the library (in the
+	process memory). In order to get a reference to a cached instance
+	using a message object, the API ProviderSession.GetTopic() was introduced.
+
+	In order to maintain backward compatibility, the deprecated API
+	ProviderSession.CreateTopic() can still be used, but it assumes that the
+	topic object was previously resolved & created using either
+	ProviderSession.CreateTopics() API. In "compat33x" mode it's sufficient to
+	call ProviderSession.Resolve[Async]() which does both resolving and topic
+	creation with the platform. As a result, the ProviderSession.CreateTopic()
+	API is now a local call (i.e. the library does not interact with the
+	platform).
+
+	When creating a topic using either ProviderSession.CreateTopics() API or
+	ProviderSession.Resolve()/CreateTopics() API, the library generates the
+	following events to the client in case of a successful operation:
+	- RESOLUTION_STATUS event with ResolutionSuccess message
+	- TOPIC_STATUS event with TopicCreated and TopicActivated (or
+	  TopicDeactivated, if the provider was not elected primary for the
+	  group) messages.
+
+- Topic recap:
+	A topic recap message, is a message generated by the client
+	application and should include ALL the current information for the
+	topic (the platform cache will get reset to whatever values came in
+	the recap message, empty fields will clear cache values; that's
+	different from a regular tick where absent field values mean "no
+	change"). There are two logical types of a topic recap message:
+
+	- Solicited topic recap message: The platform server can decide that
+	  the information it has stored in cache is not valid anymore, in that
+	  case the publisher will receive a TOPIC_STATUS event with TopicRecap
+	  message. The message will include a correlation ID that should be
+	  incorporated into the Topic recap response.
+	...
+	Topic topic = providerSession.GetTopic(msg);
+	CorrelationID cid = msg.CorrelationID;
+	Event event = service.CreatePublishEvent();
+	EventFormatter eventFormatter = new EventFormatter(event);
+	eventFormatter.AppendRecapMessage(topic, cid);
+	...
+
+	- Unsolicited topic recap message:
+	  The client application can decide on its own (based on its own internal
+	  logic) to send a recap message to the platform.  Sending a topic
+	  recap message is done the same way as sending a regular update
+	  message, with two changes: When appending a message to the event,
+	  you should use the EventFormatter.AppendRecapMessage() API (vs the
+	  EventFormatter.AppendMessage()) and, all fields of the topic recap
+	  message should be filled. The code fragment below demonstrates
+	  sending a recap message:
+	...
+	Event event = service.CreatePublishEvent();
+	EventFormatter eventFormatter = new EventFormatter(event);
+	eventFormatter.AppendRecapMessage(topic, null);
+	...
+
+- Initial paint events:
+	Publishing applications implementing "initial paint" functionality
+	must do that by sending a recap message as descibed above; formatting
+	these events with EventFormatter.AppendMessage() is not supported. The
+	recap will be requested by the platform if the service's metadata
+	specifies that publishers supports recaps (see discussion on solicited
+	topic recap messages above). Otherwise publishers can provide the
+	"initial paint" by sending an unsolicited recap of the topic in
+	response to TopicActivated notification.
+
+- Dynamically updating entitlements in Identity
+	Authorization request no longer completes when Identity is authorized,
+	AuthorizationSuccess message will arrive in a PARTIAL_RESPONSE event.
+	The authorization request will remain outstanding delivering
+	entitlements updates.
+
+- Support BBCOMM auto start on 64-bit OS
+	BBCOMM will be autostarted in DAPI mode from .NET applications running in
+	64-bit process on Windows platform with assistance of native 64-bit library
+	blpdapisup_64.dll.
+
+- Identity extended to include user's "seat" type
+	An authorized Identity object can detail whether the authenticated user is
+	a BLP Professional Service user or not.
+
+- PermissionRequest extended to support non-user subscribers
+	PermissionRequest message have been extended to supply "seat" type
+	information of the subscriber and an application ID (if subscriber used
+	application authentication).
+
+- Support custom loggers
+	BLPAPI now supports logging through customer-provided logging callback.
+
+- Connection up/down notifications
+	Added two new message types to SessionStatus event type:
+	SessionConnectionUp and SessionConnectionDown. This way the lifetime
+	of the connection to the backend server and the lifetime of the
+	session can be reported independently as connections to backend can
+	drop/recover without having the library terminate the session.

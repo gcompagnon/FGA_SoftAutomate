@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FGABusinessComponent.BusinessComponent.Holding.AssetHolding">
+    <Position X="7.5" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAQAABAAAAAAAAAAACACAEAAAAAAggAAgAAA=</HashCode>
+      <FileName>BusinessComponent\Holding\AssetHolding.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Asset" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Holding.IndexComp.Index">
+    <Position X="2.5" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAABAQAAAAAAAAAAgAQACAAAABAAAAAAAgAAAAA=</HashCode>
+      <FileName>BusinessComponent\Holding\IndexComp\Index.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Holding.PortfolioComp.Portfolio">
+    <Position X="4.75" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAQAAAAAAAAAAAAQACAAAABAAAAAgAAAAAAA=</HashCode>
+      <FileName>BusinessComponent\Holding\PortfolioComp\Portfolio.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Asset" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Core.Composite.Component" Collapsed="true">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAIAAAAAAAAQAAACAAAAAABAAAAAACAAAA=</HashCode>
+      <FileName>BusinessComponent\Core\Composite\Component.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Core.Composite.Composite">
+    <Position X="3.5" Y="2.75" Width="2" />
+    <AssociationLine Name="Items" Type="FGABusinessComponent.BusinessComponent.Core.Composite.Component" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.75" Y="2.75" />
+        <Point X="3.75" Y="1.688" />
+        <Point X="5" Y="1.688" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAACAAAAAAABAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessComponent\Core\Composite\Composite.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Items" />
+      <Property Name="Valuation" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Security.Pricing.Valuation">
+    <Position X="0.5" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAKAAAAAAAIBAACAAAAAIAAAACAgAABAAEgAAAgAAE=</HashCode>
+      <FileName>BusinessComponent\Security\Pricing\Valuation.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Valuated" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Security.AssetPortfolioAssociation">
+    <Position X="8.5" Y="6.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAEAAAAAAAAAAAEAAAAAAEAAAAAgAEAAAAA=</HashCode>
+      <FileName>BusinessComponent\Security\AssetPortfolioAssociation.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Asset" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Security.Asset" Collapsed="true">
+    <Position X="10.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIiAAAAIAAIAEAAAAAABAAAAAAAgAAgAAAAAACAgAA=</HashCode>
+      <FileName>BusinessComponent\Security\Asset.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

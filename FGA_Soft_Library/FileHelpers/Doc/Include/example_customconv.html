@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>FileHelpers Library - Marcos Meli</TITLE>
+<LINK href="/favicon.ico" rel="SHORTCUT ICON"><LINK 
+href="global.css" type=text/css 
+rel=stylesheet>
+<link type="text/css" rel="stylesheet" href="SyntaxHighlighter.css"></link>
+
+<meta NAME="Description"        content="An easy to use .NET library to read/write data from fixed length or delimited files or streams. It has support to import/export data from different data sources." />
+<meta name="Author"             content="Marcos Meli" />
+<meta NAME="keywords" Content="filehelpers,CSV,Marcos_Meli,C#,free,opensource,Devoo.net,Delimited Files,Import/Export">
+<meta NAME="Copyright" CONTENT="Copyright 2005-07 to Marcos Meli - www.Devoo.net. All Rights Reserved.">
+
+</HEAD>
+<BODY   text=black vLink=purple aLink=red link=blue 
+bgColor=white leftMargin=0 topMargin=0>
+
+		{$HEADER$}
+
+
+<table width="100%" cellpadding="5" cellspacing="5">
+<tr><td><div id=contentdiv>  <h2>Decimal Custom Converter (for fixed length files)</h2>
+        <blockquote>
+        <p>Use the following for&nbsp;fixed length 
+        records&nbsp;where you need to read decimal&nbsp;data and you don't have the decimal&nbsp;because this isn't required. The following steps explain how to read that.</p>
+          <p>If you like to parse a file with a field that has different parsing rules you can define a CustomConverter.&nbsp; For example, if you have the following&nbsp;source file:</p>
+          <blockquote><TEXTAREA class=c#:nogutter:nocontrols name=code>0001250001458800013025
+0001260012345600234567
+0001270123456702345678
+0001280087654300123456
+</TEXTAREA>
+          </blockquote>
+          <p>This is a&nbsp;fixed length&nbsp;record file with&nbsp;6 characters&nbsp;for the ProductId and 8 places for PriceList and ProceOnePay.&nbsp; The record class must be as follows:</p>
+          <blockquote><TEXTAREA class=c# name=code>[FixedLengthRecord]
+public class PriceRecord
+{
+    [FieldFixedLength(6)]
+    public int ProductId;
+
+    [FieldFixedLength(8)]
+    [FieldConverter(typeof(MoneyConverter))]
+    public decimal PriceList;
+
+    [FieldFixedLength(8)]
+    [FieldConverter(typeof(MoneyConverter))]
+    public decimal PriceOnePay;
+}
+</TEXTAREA>
+          </blockquote>
+          <p>The last step is to define the converter, you must inherit from&nbsp; <A href="FileHelpers.ConverterBase.html">ConverterBase</A>: </p>
+          <blockquote><TEXTAREA class=c# name=code>public class MoneyConverter : ConverterBase
+{
+    private int mDecimals = 2;
+    
+    public override object StringToField(string from)
+    {
+       return Convert.ToDecimal(Decimal.Parse(from) / (10 ^ mDecimals));
+    }
+
+
+    public override string FieldToString(object fieldValue)
+    {
+        Decimal v = Convert.ToDecimal(val);
+
+		// ugly but works =)
+		string res = Decimal.ToUInt32(Decimal.Truncate(v)).ToString(); 
+        res += Decimal.Round(Decimal.Remainder(v, 1), mDecimals) 
+                   .ToString(".##").Replace(",", "").Replace(".", "").PadLeft(mDecimals, '0'); 
+                   
+        return res;
+        
+        // a more elegant option that also works
+        // return Convert.ToInt32(Convert.ToDecimal(fieldValue) * (10 ^ mDecimals)).ToString(); 
+    }
+
+	// this is to get notified when the library found a Null Value
+    protected override bool CustomNullHandling
+	{
+		get { return true; } 
+	}
+	
+ 
+}
+</TEXTAREA>
+          </blockquote>
+          <p>Done !! you can actually parse the file with:</p>
+          <blockquote><TEXTAREA class=c# name=code>FileHelperEngine  engine = new FileHelperEngine(typeof(PriceRecord));
+
+PriceRecord[] res = (PriceRecord[]) engine.ReadFile("NameTest.txt");
+</TEXTAREA>
+			
+          </blockquote>
+        </blockquote>{$FOOTER$}</div></td>
+
+		
+</tr>
+</table>
+
+
+</BODY></HTML>

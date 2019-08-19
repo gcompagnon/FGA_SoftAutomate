@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Tests\FGA_BusinessComponent.Tests" Label="FGA_BusinessComponent.Tests" Category="Projet" />
+    <Node Id="EntityFramework 4.3.1" Label="EntityFramework 4.3.1" Category="Package" />
+    <Node Id="FGA_Automate" Label="FGA_Automate" Category="Projet" />
+    <Node Id="DocumentFormat.OpenXml 1.0" Label="DocumentFormat.OpenXml 1.0" Category="Package" />
+    <Node Id="FGA_BusinessComponent" Label="FGA_BusinessComponent" Category="Projet" />
+    <Node Id="EntityFramework 4.3.1" Label="EntityFramework 4.3.1" Category="Package" />
+    <Node Id="EntityFramework.Migrations 0.8.0.0" Label="EntityFramework.Migrations 0.8.0.0" Category="Package" />
+    <Node Id="log4net 2.0.0" Label="log4net 2.0.0" Category="Package" />
+  </Nodes>
+  <Links>
+    <Link Source="Tests\FGA_BusinessComponent.Tests" Target="EntityFramework 4.3.1" Category="Package installé" />
+    <Link Source="FGA_Automate" Target="DocumentFormat.OpenXml 1.0" Category="Package installé" />
+    <Link Source="EntityFramework.Migrations 0.8.0.0" Target="EntityFramework 4.3.1" Category="Dépendance de package" />
+    <Link Source="FGA_BusinessComponent" Target="EntityFramework.Migrations 0.8.0.0" Category="Package installé" />
+    <Link Source="FGA_BusinessComponent" Target="log4net 2.0.0" Category="Package installé" />
+  </Links>
+  <Categories>
+    <Category Id="Projet" />
+    <Category Id="Package" />
+  </Categories>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Projet" ValueLabel="True">
+      <Condition Expression="HasCategory('Projet')" />
+      <Setter Property="Background" Value="Blue" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Dépendance de package" ValueLabel="True">
+      <Condition Expression="HasCategory('Dépendance de package')" />
+      <Setter Property="Background" Value="Yellow" />
+    </Style>
+  </Styles>
+</DirectedGraph>

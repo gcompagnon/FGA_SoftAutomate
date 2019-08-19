@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FGABusinessComponent.BusinessComponent.Security.Debt">
+    <Position X="4" Y="7.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AEUABACAAAAAAAAAAACAEAQAAgAIAAAIEAAAAAAAAAA=</HashCode>
+      <FileName>BusinessComponent\Security\Debt.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="NextInterest" />
+      <Property Name="FinancialInfos" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Security.InterestCalculation">
+    <Position X="0.5" Y="7.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAABAAIAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessComponent\Security\Debt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Security.Security">
+    <Position X="6.25" Y="5" Width="1.5" />
+    <Members>
+      <Property Name="RatingId" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAIAAQABAQAIAAAAgAAABAAAACAAABEAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessComponent\Security\Security.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Rating" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Pricing" />
+      <Property Name="CapitalRaised" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Security.Rating" Collapsed="true">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAAAAAAAIBEIAgACAABBAAwAAEIEAAAAgAAAACAA=</HashCode>
+      <FileName>BusinessComponent\Security\Rating.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Security.Equity">
+    <Position X="8.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessComponent\Security\Equity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Security.InvestmentFund">
+    <Position X="6.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessComponent\Security\InvestmentFund.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Security.Capital">
+    <Position X="2.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAEAAAIBAAAIAAAAACgAAAAAAABAQAAAAAAAAA=</HashCode>
+      <FileName>BusinessComponent\Security\Capital.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Security.Pricing.SecuritiesPricing">
+    <Position X="9.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAACAAAEATgIBAAAAAAAAIAAAAAAwAEBAAAgAQAAABA=</HashCode>
+      <FileName>BusinessComponent\Security\Pricing\SecuritiesPricing.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PriceFactType" />
+      <Property Name="Yield" />
+      <Property Name="DebtPriceCalculation" />
+      <Property Name="DebtDataCalculation" />
+      <Property Name="DebtYield" />
+      <Property Name="DebtSpread" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Security.Pricing.PriceFactType">
+    <Position X="12.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAKAAAgAIAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>BusinessComponent\Security\Pricing\SecuritiesPricing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Security.Pricing.Yield">
+    <Position X="12.5" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAgAAACAAAAAAAAAA=</HashCode>
+      <FileName>BusinessComponent\Security\Pricing\SecuritiesPricing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Security.Pricing.DebtPriceCalculation">
+    <Position X="12.5" Y="10.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAQAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessComponent\Security\Pricing\SecuritiesPricing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Security.Pricing.DebtYield">
+    <Position X="12.5" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessComponent\Security\Pricing\SecuritiesPricing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Security.Pricing.DebtSpread">
+    <Position X="12.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAIAAAAABQAAAAAAIAAAAAAAAAAEAA=</HashCode>
+      <FileName>BusinessComponent\Security\Pricing\SecuritiesPricing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Security.Pricing.DebtDataCalculation">
+    <Position X="12.5" Y="12.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AQAEAAAAAAAAAAAAAAAKAAAAQBAAAAAAAQAAAAAAAAQ=</HashCode>
+      <FileName>BusinessComponent\Security\Pricing\SecuritiesPricing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Security.Asset" Collapsed="true">
+    <Position X="6.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIiAAAAIAAIAEAAAAAABAAAAAAAgAAgAAAAAACAgAA=</HashCode>
+      <FileName>BusinessComponent\Security\Asset.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="AssetClassification" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Core.AssetClassification" Collapsed="true">
+    <Position X="2.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAgAIAAAAAAQAAAAAAgAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>BusinessComponent\Core\AssetClassification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Common.SeniorityLevelCode">
+    <Position X="0.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAgEAAACAQBAEgAGAAAAAACIAAIAgAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessComponent\Common\SeniorityLevel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FGABusinessComponent.BusinessComponent.Security.FinancialInfos">
+    <Position X="2.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAggAAACAAAAEAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessComponent\Security\Debt.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Seniority" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

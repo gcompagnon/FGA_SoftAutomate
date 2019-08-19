@@ -1,0 +1,15 @@
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DesignerSetupDemo\bin\Release\DesignerSetupDemo.exe.config
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DesignerSetupDemo\bin\Release\DesignerSetupDemo.exe
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DesignerSetupDemo\bin\Release\DesignerSetupDemo.pdb
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DesignerSetupDemo\bin\Release\DesignerSetupDemo.xml
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DesignerSetupDemo\bin\Release\DataGridViewAutoFilter.dll
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DesignerSetupDemo\bin\Release\DataGridViewAutoFilter.pdb
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DesignerSetupDemo\bin\Release\DataGridViewAutoFilter.xml
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DesignerSetupDemo\obj\Release\ResolveAssemblyReference.cache
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DesignerSetupDemo\obj\Release\DesignerSetupDemo.DesignerSetupForm.resources
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DesignerSetupDemo\obj\Release\DesignerSetupDemo.Resources.resources
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DesignerSetupDemo\obj\Release\GenerateResource-ResGen.read.1.tlog
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DesignerSetupDemo\obj\Release\GenerateResource-ResGen.write.1.tlog
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DesignerSetupDemo\obj\Release\DesignerSetupDemo.exe
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DesignerSetupDemo\obj\Release\DesignerSetupDemo.xml
+C:\FGA_SOFT\DEVELOPPEMENT\PROJET\FGA_Soft_Library\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DesignerSetupDemo\obj\Release\DesignerSetupDemo.pdb

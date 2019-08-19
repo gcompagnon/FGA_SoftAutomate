@@ -1,0 +1,9 @@
+[submodule "FGA_Soft_Library"]
+	path = FGA_Soft_Library
+	url = http://fx026654m/Bonobo.Git.Server/FGA_Soft_Library.git
+[submodule "FGA_Soft_DataModel"]
+	path = FGA_Soft_DataModel
+	url = http://fx026654m/Bonobo.Git.Server/FGA_Soft_DataModel.git
+[submodule "FGA_Soft_Reporting"]
+	path = FGA_Soft_Reporting
+	url = http://fx026654m/Bonobo.Git.Server/FGA_Soft_Reporting.git

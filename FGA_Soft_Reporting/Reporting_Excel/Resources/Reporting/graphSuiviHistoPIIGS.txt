@@ -1,0 +1,31 @@
+graph:modele;titre;colonneLegendes;colonneDonnees
+serie:NULL;[boolean];colonneLegende;colonneDonnees
+meta:modele;titre;[transpose];serie,serie,serie
+tableau:indiceDataTable
+
+NOTE : le booleen optionel dans la déinition d'une série permet de choisir le nom de cete série
+si absent (Exemple : #serie1:;;libelle;last ) -> le nom de la série est celui de la sheet
+si présent  (Exemple : #serie1:;1;libelle;last ) -> le nom de la série est celui de la colonne de donnée
+
+
+
+#meta2:modele2;Evolution de l'exposition emprunts Etat Espagne;true;serie5,serie6
+#serie5:;1;dateInventaire;VB_Totale_Direct
+#serie6:;1;dateInventaire;last
+
+#meta1:modele1;Explication de la variation de l'exposition Espagne;true;serie1,serie2,serie3,serie4
+#serie1:;1;dateInventaire;Achats_direct
+#serie2:;1;dateInventaire;Ventes_direct
+#serie3:;1;dateInventaire;variation_MTM_Direct
+#serie4:;1;dateInventaire;last
+
+#meta4:modele2;Evolution de l'exposition emprunts Etat Italie;true;serie11,serie12
+#serie11:;1;dateInventaire;VB_Totale_Direct
+#serie12:;1;dateInventaire;last
+
+#meta3:modele3;Explication de la variation de l'exposition Italie;true;serie7,serie8,serie9,serie10
+#serie7:;1;dateInventaire;Achats_direct
+#serie8:;1;dateInventaire;Ventes_direct
+#serie9:;1;dateInventaire;variation_MTM_Direct
+#serie10:;1;dateInventaire;last
+

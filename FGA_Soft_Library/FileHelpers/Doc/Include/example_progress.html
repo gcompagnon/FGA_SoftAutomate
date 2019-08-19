@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>FileHelpers Library - Marcos Meli</TITLE>
+<LINK href="/favicon.ico" rel="SHORTCUT ICON"><LINK 
+href="global.css" type=text/css 
+rel=stylesheet>
+<link type="text/css" rel="stylesheet" href="SyntaxHighlighter.css"></link>
+
+<meta NAME="Description"        content="An easy to use .NET library to read/write data from fixed length or delimited files or streams. It has support to import/export data from different data sources." />
+<meta name="Author"             content="Marcos Meli" />
+<meta NAME="keywords" Content="filehelpers,CSV,Marcos_Meli,C#,free,opensource,Devoo.net,Delimited Files,Import/Export">
+<meta NAME="Copyright" CONTENT="Copyright 2005-07 to Marcos Meli - www.Devoo.net. All Rights Reserved.">
+
+<style type="text/css">
+<!--
+.style1 {color: #FFFFFF}
+-->
+</style>
+</HEAD>
+<BODY   text=black vLink=purple aLink=red link=blue 
+bgColor=white leftMargin=0 topMargin=0>
+
+		{$HEADER$}
+
+
+<table width="100%" cellpadding="5" cellspacing="5">
+<tr><td><div id=contentdiv> 
+  <h2>
+      Progress Notification</h2>
+  <blockquote>
+          <p>
+              From the version 1.4.2 you can get notified about the progress of the operations
+              of the engines and DataLinks.</p>
+      <p>
+          The already implemented feature
+          can be used in all cases.&nbsp; For example, when you write a file, the engine
+          knows the total records to be written and the record currently being processed.&nbsp; This information is
+          used to provide an accurate notification. &nbsp;However, if you read a file the engine only
+          knows the current record and not the total then informs -1.</p>
+      <p>
+             The usage is simple, you must to instantiate the engine and&nbsp;before&nbsp;any operation,
+          you must call the SetProgressHandler:</p>
+          <blockquote><TEXTAREA class=c# name=code>    FileHelperEngine engine = new FileHelperEngine(typeof(Orders));
+
+    engine.SetProgressHandler(new ProgressChangeHandler(ProgressChange));
+    
+    engine.ReadFile(... 
+</TEXTAREA>
+          </blockquote>
+          <p>
+              and in your Progress change method:</p><blockquote><TEXTAREA class=c# name=code>    private void ProgressChange(ProgressEventArgs e)
+    {
+        prog1.PositionMax = e.ProgressTotal;
+        prog1.Position = e.ProgressCurrent;
+        prog1.Text = "Record " + e.ProgressCurrent.ToString();
+
+        Application.DoEvents();
+    }
+</TEXTAREA>
+          </blockquote>
+      <p>
+          Check the demo application for an example that looks like:</p>
+      <p>
+          <IMG src="progress.png" >&nbsp;</p>
+      <p>
+          <strong> In&nbsp;the distribution you can find My XpProgressBar for using it together with
+              the FileHelpers.</strong></p>
+  </blockquote>{$FOOTER$}</div></td>
+
+		
+</tr>
+</table>
+
+</BODY></HTML>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="backupfgaprod" storage="c:\fga_soft\developpement\projet\fga_soft_automate\sqlcopy_test\backupfgaprod.orderedtest" id="0375b21e-c386-489d-b5be-8cc18d309a57" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Execution id="6484fb46-147f-48dd-bc22-fe1b0b8cb3e9" />
+  <TestLinks>
+    <TestLink id="46250d2f-5bbf-0e65-54f6-955ea2dd793e" name="TestSourceDataCopy" storage="bin\debug\sqlcopy_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="3b49bc4f-93bf-6736-b9e2-bb3658b73cad" name="TestBulkCopyData" storage="bin\debug\sqlcopy_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>
